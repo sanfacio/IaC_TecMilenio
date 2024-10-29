@@ -6,7 +6,7 @@
 
 	[Install Vault | Vault | HashiCorp Developer](https://developer.hashicorp.com/vault/tutorials/getting-started/getting-started-install?in=vault%2Fgetting-started)
 
-####
+###
 2.  Validar la instalación de **Vault**
 
 		vault
@@ -15,7 +15,7 @@
 
 		vault -help
 ---
-#### Iniciando el servidor de DEV de Vault
+### Iniciando el servidor de DEV de Vault
 
 4. Inicializar el servidor de desarrollo de **Vault**
 
@@ -48,7 +48,7 @@
 
 		vault kv -help 
 ---
-#### Escribir Secretos en Vault
+### Escribir Secretos en Vault
 10. Antes de escribir tu primer secret, revisa el comando de ayuda:
 
 		vault kv put -help
@@ -60,7 +60,7 @@
 
 		vault kv put -mount=secret hello foo=world excited=yes
 ---
-#### Leer un Secreto
+### Leer un Secreto
 13. Los *secretos* se pueden leer usando el comando `vault kv get` 
 
 		vault kv get -mount=secret hello
@@ -70,7 +70,7 @@
 		vault kv get -mount=secret -field=excited hello
 
 ---
-#### Eliminar un Secreto
+### Eliminar un Secreto
 15. Ahora que hemos visto cómo crear y escribir secretos, vamos a eliminar uno. Esto lo podemos hacer usando el comando `vault kv delete` . 
 
 		vault kv delete -mount=secret hello
